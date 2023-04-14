@@ -233,8 +233,8 @@
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/Starting Template\/dev\/index.html",
-      "oF" : 0
+      "oAP" : "\/Starting Template\/deploy\/index.html",
+      "oF" : 2
     },
     "\/Starting Template\/dev\/js\/scripts.js" : {
       "bF" : 0,
