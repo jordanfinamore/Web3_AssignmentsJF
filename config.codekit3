@@ -166,7 +166,7 @@
     },
     "\/Starting Template\/deploy\/img\/pic8.png" : {
       "ft" : 32768,
-      "iS" : 0,
+      "iS" : 106321,
       "oA" : 0,
       "oAP" : "\/Starting Template\/deploy\/img\/pic8.png",
       "oF" : 0,
@@ -195,6 +195,38 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
+    },
+    "\/Starting Template\/dev\/global\/footer.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/Starting Template\/dev\/global\/footer.html",
+      "oF" : 0
+    },
+    "\/Starting Template\/dev\/global\/head.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/Starting Template\/dev\/global\/head.html",
+      "oF" : 0
+    },
+    "\/Starting Template\/dev\/global\/header.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/Starting Template\/dev\/global\/header.html",
+      "oF" : 0
+    },
+    "\/Starting Template\/dev\/global\/scripts.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/Starting Template\/dev\/global\/scripts.html",
+      "oF" : 0
     },
     "\/Starting Template\/dev\/index.kit" : {
       "cB" : 0,
