@@ -1,0 +1,12 @@
+/* =============
+    Search bar
+============= */
+.search{
+display:grid;
+grid-template-columns: 1fr 1fr;
+}
+/* magnifying glass button */
+#mg-button{
+    display:grid;
+    grid-template-columns: 1fr;
+    }
