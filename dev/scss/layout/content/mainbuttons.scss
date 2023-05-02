@@ -1,12 +1,17 @@
 /* =============
-    Main buttons
+    Dual "main" buttons
 ============= */
 .mainbuttons{
-display:grid;
-grid-template-columns: 1fr 1fr;
+    display:grid;
+grid-template-columns: 1fr;
 }
-/* magnifying glass button */
+/* individual button */
 .mainbutton{
     display:grid;
-    grid-template-columns: 1fr;
-    }
+grid-template-columns: 1fr 1fr;
+}
+/* right side of button */
+#mb-rightside{
+    display:grid;
+grid-template-columns: 1fr;
+}

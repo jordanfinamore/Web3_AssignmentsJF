@@ -1,11 +1,11 @@
 /* =============
-    Articles
+    "what's new" articles
 ============= */
 .articles{
 display:grid;
 grid-template-columns: 1fr;
 }
-/* thirds section */
+/* individual article class */
 .article{
     display:grid;
     grid-template-columns: 1fr;

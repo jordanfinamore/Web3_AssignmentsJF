@@ -1,3 +1,22 @@
 /* =============
-    Hero
+    Hero content
 ============= */
+.hero{
+    display:grid;
+grid-template-columns: 1fr;
+}
+/* hero stripe 1 (top) */
+.herostripe1{
+    display:grid;
+grid-template-columns: 1fr;
+}
+/* hero stripe 2 (bottom) */
+.herostripe2{
+    display:grid;
+grid-template-columns: 1fr;
+}
+/* hero-stripe subtitle & arrow */
+#hs-subtitle{
+    display:grid;
+grid-template-columns: 1fr 1fr;
+}
