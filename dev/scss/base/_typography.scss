@@ -5,7 +5,20 @@ body{
     font-family: 'American Typewriter', sans-serif;
 }
 
-h1,h2,h3,h4{
+h1{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    margin: 0;
+    padding: 0;
+}
+h3{
+    margin: 0;
+    padding: 0;
+}
+
+h4{
     margin: 0;
     padding: 0;
 }
@@ -17,4 +30,40 @@ p{
 
 .section-title{
     font-weight: 300;
+}
+
+/* Search bar */
+
+.search {
+  
+}
+.search >p {
+  
+}
+
+.search >img {
+  
+}
+
+/* Hero stripes */
+.stripes {
+  
+}
+.stripe1 {
+
+}
+.stripe1 >h1 {
+  
+}
+.stripe1 >h2 {
+  
+}
+.stripe2 {
+  
+}
+.stripe2 >h1 {
+  
+}
+.stripe2 >h1 {
+  
 }

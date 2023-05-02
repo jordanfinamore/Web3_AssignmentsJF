@@ -1,0 +1,12 @@
+/* =============
+    Main buttons
+============= */
+.mainbuttons{
+display:grid;
+grid-template-columns: 1fr 1fr;
+}
+/* magnifying glass button */
+.mainbutton{
+    display:grid;
+    grid-template-columns: 1fr;
+    }
