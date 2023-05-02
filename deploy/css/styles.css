@@ -336,15 +336,12 @@ body {
   margin: 0;
   background-color: #fdf7e1;
   align-content: center;
+  font-family: "American Typewriter", sans-serif;
 }
 
 /* =============
     Typography
 ============= */
-body {
-  font-family: "American Typewriter", sans-serif;
-}
-
 h1 {
   margin: 0;
   padding: 0;
