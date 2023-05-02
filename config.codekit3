@@ -34,6 +34,86 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/icon-arrow.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/icon-arrow.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/icon-facebook.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/icon-facebook.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/icon-insta.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/icon-insta.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/icon-location.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/icon-location.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/icon-phone.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/icon-phone.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/icon-search.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/icon-search.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/icon-twitter.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/icon-twitter.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/icon-youtube.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/icon-youtube.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/logo-full.png" : {
       "ft" : 32768,
       "iS" : 48300,
@@ -264,7 +344,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/global\/search.html",
       "oF" : 0
     },
@@ -429,7 +509,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/layout\/footer.scss" : {
+    "\/dev\/scss\/layout\/content\/_articles.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -437,14 +517,14 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/scss\/layout\/footer.css",
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/layout\/content\/_articles.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/layout\/header.scss" : {
+    "\/dev\/scss\/layout\/content\/_gallery.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -452,14 +532,14 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/scss\/layout\/header.css",
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/layout\/content\/_gallery.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/layout\/scripts.scss" : {
+    "\/dev\/scss\/layout\/content\/_hero.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -467,14 +547,14 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/scss\/layout\/scripts.css",
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/layout\/content\/_hero.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/layout\/search.scss" : {
+    "\/dev\/scss\/layout\/content\/_mainbuttons.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -482,14 +562,14 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/scss\/layout\/search.css",
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/layout\/content\/_mainbuttons.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/articles.scss" : {
+    "\/dev\/scss\/layout\/global\/_footer.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -497,14 +577,14 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/scss\/sections\/articles.css",
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/layout\/global\/_footer.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/gallery.scss" : {
+    "\/dev\/scss\/layout\/global\/_header.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -512,14 +592,14 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/scss\/sections\/gallery.css",
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/layout\/global\/_header.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/hero.scss" : {
+    "\/dev\/scss\/layout\/global\/_scripts.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -527,14 +607,14 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/scss\/sections\/hero.css",
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/layout\/global\/_scripts.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/mainbuttons.scss" : {
+    "\/dev\/scss\/layout\/global\/_search.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -542,8 +622,8 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/scss\/sections\/mainbuttons.css",
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/layout\/global\/_search.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
