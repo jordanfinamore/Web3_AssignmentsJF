@@ -4,19 +4,22 @@
 .hero{
     display:grid;
 grid-template-columns: 1fr;
+color: $l-frenchroast;
+/* hero-stripe subtitle & arrow */
+#hs-subtitle{
+    display:grid;
+grid-template-columns: 1fr 1fr;
 }
 /* hero stripe 1 (top) */
 .herostripe1{
+    background-color: $d-frenchroast;
     display:grid;
 grid-template-columns: 1fr;
 }
 /* hero stripe 2 (bottom) */
 .herostripe2{
+    background-color: $frenchroast;
     display:grid;
 grid-template-columns: 1fr;
 }
-/* hero-stripe subtitle & arrow */
-#hs-subtitle{
-    display:grid;
-grid-template-columns: 1fr 1fr;
 }

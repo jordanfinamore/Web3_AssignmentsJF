@@ -4,14 +4,33 @@
 .mainbuttons{
     display:grid;
 grid-template-columns: 1fr;
-}
+padding: 16px;
+gap: 16px;
 /* individual button */
-.mainbutton{
+.button{
     display:grid;
-grid-template-columns: 1fr 1fr;
-}
-/* right side of button */
-#mb-rightside{
+    grid-template-columns: 1fr 1fr;
+    background-color: $l-alpinefrost;
+    color: $d-wisteria;
+    border-radius: 6px;
+    padding-block: 16px;
+    padding-left: 16px;
+    padding-right: 0px;
+    /* right side of button */
+.mb-rightside{
+    background-image: url("deploy/img/logo-pic.png");
+    background-size: cover;
     display:grid;
-grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+    border-radius: 6px;
+    padding: 16px;
+    .readmore {
+        background-color: $d-frenchroast;
+        color: $l-frenchroast;
+        border-radius: 6px;
+        padding: 8px;
+        text-align: center;
+      }
+    }
+    }
 }

@@ -2,9 +2,12 @@
     Header
 ============= */
 header{
-background-color: amaranth;
-justify-content: left;
-display:grid;
+background-color: $amaranth;
+display: grid;
 grid-template-columns: 1fr;
-gap: 18px;
+padding: 16px;
+img{
+    height: 35px;
+    width: auto;
+}
 }

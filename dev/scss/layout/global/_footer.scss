@@ -2,16 +2,17 @@
     Footer
 ============= */
 footer{
+    background-color: $l-amaranth;
 display:grid;
 grid-template-columns: 1fr;
-}
 /* thirds section */
 .fsection{
     display:grid;
     grid-template-columns: 1fr;
-    }
-/* address logos/copy */
+    /* address logos/copy */
  #address{
-     display:grid;
-     grid-template-columns: 1fr 1fr;
-      }
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+     }
+    }
+}

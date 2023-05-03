@@ -4,9 +4,35 @@
 .articles{
 display:grid;
 grid-template-columns: 1fr;
+color: $amaranth;
+gap: 16px;
+padding: 16px;
 }
 /* individual article class */
 .article{
+    border-radius: 6px;
+    background-color: $l-wisteria;
     display:grid;
     grid-template-columns: 1fr;
+    img{
+        border-radius: 6px 6px 0px 0px;
+    }
+    h4{
+        padding: 16px;
+        color: $d-amaranth;
+    }
+    p{
+        padding: 16px;
+        color: $d-wisteria;
+    }
+    .readmore {
+        padding: 16px;
+        background-color: $d-frenchroast;
+        p{
+            color: $l-frenchroast;
+        }
+        border-radius: 6px;
+        padding: 8px;
+        text-align: center;
+      }
     }

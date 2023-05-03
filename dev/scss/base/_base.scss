@@ -27,6 +27,7 @@ $l-buttercream: #fffef9;
   }
   svg {
     color: $l-frenchroast;
+    width: 50px;
   }
 
 /* Format */
@@ -35,5 +36,7 @@ body {
     background-color: $buttercream;
     align-content: center;
     font-family: 'American Typewriter', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 

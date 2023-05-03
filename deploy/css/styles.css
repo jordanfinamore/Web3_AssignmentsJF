@@ -1,11 +1,6 @@
 /* =============
     Mixins
 ============= */
-/* ---------------- Font Sizing ---------------- */
-html {
-  font-size: 100%;
-}
-
 /* ---------------- Media Queries ---------------- */
 /* =============
     Variables
@@ -329,6 +324,7 @@ img {
 
 svg {
   color: #d6ae7f;
+  width: 50px;
 }
 
 /* Format */
@@ -337,6 +333,8 @@ body {
   background-color: #fdf7e1;
   align-content: center;
   font-family: "American Typewriter", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 /* =============
@@ -363,16 +361,13 @@ h4 {
 }
 
 p {
-  margin: 0;
-  padding: 0;
+  font-size: 16pt;
 }
 
 .section-title {
   font-weight: 300;
 }
 
-/* Search bar */
-/* Hero stripes */
 /* =============
     Buttons
 ============= */
@@ -409,29 +404,31 @@ textarea {
     Header
 ============= */
 header {
-  background-color: amaranth;
-  justify-content: left;
+  background-color: #513959;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 18px;
+  padding: 16px;
+}
+header img {
+  height: 35px;
+  width: auto;
 }
 
 /* =============
     Footer
 ============= */
 footer {
+  background-color: #715785;
   display: grid;
   grid-template-columns: 1fr;
+  /* thirds section */
 }
-
-/* thirds section */
-.fsection {
+footer .fsection {
   display: grid;
   grid-template-columns: 1fr;
+  /* address logos/copy */
 }
-
-/* address logos/copy */
-#address {
+footer .fsection #address {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -443,14 +440,27 @@ footer {
     Search bar
 ============= */
 .search {
+  background-color: #dfc9e4;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 16px;
+  gap: 16px;
+  /* magnifying glass button */
 }
-
-/* magnifying glass button */
-#mg-button {
+.search p {
+  text-decoration: underline;
+  font-size: 16pt;
+  color: #bd8ebe;
+}
+.search #sbutton {
   display: grid;
   grid-template-columns: 1fr;
+  background-color: #5b3a28;
+  align-content: center;
+  border-radius: 3.5px;
+  height: 34px;
+  width: 42px;
+  padding: 10px;
 }
 
 /* =============
@@ -459,24 +469,24 @@ footer {
 .hero {
   display: grid;
   grid-template-columns: 1fr;
+  color: #d6ae7f;
+  /* hero-stripe subtitle & arrow */
+  /* hero stripe 1 (top) */
+  /* hero stripe 2 (bottom) */
 }
-
-/* hero stripe 1 (top) */
-.herostripe1 {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-/* hero stripe 2 (bottom) */
-.herostripe2 {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-/* hero-stripe subtitle & arrow */
-#hs-subtitle {
+.hero #hs-subtitle {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+.hero .herostripe1 {
+  background-color: #5b3a28;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.hero .herostripe2 {
+  background-color: #946644;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 /* =============
@@ -485,18 +495,35 @@ footer {
 .mainbuttons {
   display: grid;
   grid-template-columns: 1fr;
+  padding: 16px;
+  gap: 16px;
+  /* individual button */
 }
-
-/* individual button */
-.mainbutton {
+.mainbuttons .button {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  background-color: #eab5c8;
+  color: #724781;
+  border-radius: 6px;
+  padding-block: 16px;
+  padding-left: 16px;
+  padding-right: 0px;
+  /* right side of button */
 }
-
-/* right side of button */
-#mb-rightside {
+.mainbuttons .button .mb-rightside {
+  background-image: url("deploy/img/logo-pic.png");
+  background-size: cover;
   display: grid;
   grid-template-columns: 1fr;
+  border-radius: 6px;
+  padding: 16px;
+}
+.mainbuttons .button .mb-rightside .readmore {
+  background-color: #5b3a28;
+  color: #d6ae7f;
+  border-radius: 6px;
+  padding: 8px;
+  text-align: center;
 }
 
 /* =============
@@ -518,10 +545,36 @@ footer {
 .articles {
   display: grid;
   grid-template-columns: 1fr;
+  color: #513959;
+  gap: 16px;
+  padding: 16px;
 }
 
 /* individual article class */
 .article {
+  border-radius: 6px;
+  background-color: #dfc9e4;
   display: grid;
   grid-template-columns: 1fr;
+}
+.article img {
+  border-radius: 6px 6px 0px 0px;
+}
+.article h4 {
+  padding: 16px;
+  color: #301c36;
+}
+.article p {
+  padding: 16px;
+  color: #724781;
+}
+.article .readmore {
+  padding: 16px;
+  background-color: #5b3a28;
+  border-radius: 6px;
+  padding: 8px;
+  text-align: center;
+}
+.article .readmore p {
+  color: #d6ae7f;
 }
