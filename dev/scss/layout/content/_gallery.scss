@@ -9,3 +9,8 @@ grid-template-columns: 1fr;
 .galimage{
     background-size: cover;
     }
+    @include md{
+        .gallery{
+            grid-template-columns:  1fr 1fr;
+            }
+        }

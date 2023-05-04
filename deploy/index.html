@@ -14,10 +14,12 @@
     </header>
     <!-- SEARCH -->
     <div class="search">
-        <p>search for artwork</p>
-        <div id="sbutton">
-            <img src="img/icon-search.svg" height=55 alt="search icon"></i>
-        </div>
+        <form action="">
+            <input type="search" placeholder="search for artwork">
+            <button>
+                <img src="img/icon-search.svg" height=55 alt="search icon"></i>
+            </button>
+        </form>
     </div>
     <!-- HERO -->
     <div class="hero">
@@ -27,22 +29,22 @@
         <div class="stripes">
         <!-- STRIPE 1 -->
         <div class="herostripe1">
-        <div>
+        <div id="sleft">
             <h1>Interested in our cause?</h1>
             <h2>Artist applications are open until 12/7.</h2>
         </div>
-        <div>
+        <div id="sright">
             <h2>Details</h2>
             <img src="img/icon-arrow.svg" alt="arrow">
         </div>
     </div>
         <!-- STRIPE 2 -->
         <div class="herostripe2">
-        <div>
+        <div id="sleft">
             <h1>4th Annual Art Market & Ice Cream Social</h1>
             <h2>June 24th, 10:00AM - 7:00PM</h2>
         </div>
-        <div>
+        <div id="sright">
             <h2>Details</h2>
             <img src="img/icon-arrow.svg" alt="arrow">
         </div>
@@ -79,6 +81,7 @@
     <!-- WHAT'S NEW -->
     <div class="articles">
         <h3>what's new</h3>
+        <div class="content">
         <!-- ARTICLE CONTAINER 1 -->
         <div class="article">
             <img src="img/pic6.png" alt="pic 6">
@@ -126,30 +129,33 @@
             </div>  
         </div>
     </div>
+    </div>
      <!-- FOOTER -->
     <footer>
     <!-- SECTION 1 -->
-    <div>
+    <div class="fsection">
         <h5>located at:</h5>
         <h6>The Roundabout</h6>
-        <img src="img/icon-location.svg" alt="location">
-        <p>20 Tolland Turnpike
-        Manchester, CT 06042-1763</p>
-        <img src="img/icon-phone.svg" alt="phone">
-        <p>(800) 829-4161</p>
+        <div class="address">
+            <img src="img/icon-location.svg" alt="location">
+            <p>20 Tolland Turnpike
+            Manchester, CT 06042-1763</p>
+        </div>
+            <div class="address">
+                <img src="img/icon-phone.svg" alt="phone">
+                <p>(800) 829-4161</p>
+            </div>
     </div>
     <!-- SECTION 2 -->
-    <div>
+    <div class="fsection">
         <h5>stay updated:</h5>
-        <div>
-            <p>Email address</p>
-        </div>
-        <div>
-            <p>sign up</p>
-        </div>
+        <form action="">
+            <input type="email" placeholder="Email Address">
+            <button>sign up</button>
+        </form>
     </div>
     <!-- SECTION 3 -->
-    <div>
+    <div class="fsection">
         <h5>follow us:</h5>
         <div>
             <img src="img/icon-youtube.svg" alt="youtube">

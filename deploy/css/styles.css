@@ -330,7 +330,7 @@ svg {
 /* Format */
 body {
   margin: 0;
-  background-color: #fdf7e1;
+  background-color: #fffef9;
   align-content: center;
   font-family: "American Typewriter", sans-serif;
   display: grid;
@@ -341,23 +341,33 @@ body {
     Typography
 ============= */
 h1 {
-  margin: 0;
-  padding: 0;
+  font-weight: 700;
+  font-size: 18pt;
 }
 
 h2 {
-  margin: 0;
-  padding: 0;
+  font-weight: 600;
+  font-size: 14pt;
 }
 
 h3 {
-  margin: 0;
-  padding: 0;
+  font-weight: normal;
+  font-size: 22pt;
 }
 
 h4 {
   margin: 0;
   padding: 0;
+}
+
+h5 {
+  font-size: 20pt;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 18pt;
+  font-weight: normal;
 }
 
 p {
@@ -402,12 +412,12 @@ textarea {
 header {
   background-color: #513959;
   display: grid;
-  grid-template-columns: 1fr;
-  padding: 16px;
+  grid-template-columns: 20%;
+  padding: 32px;
 }
 header img {
-  height: 35px;
-  width: auto;
+  height: inherit;
+  width: cover;
 }
 
 /* =============
@@ -417,18 +427,68 @@ footer {
   background-color: #715785;
   display: grid;
   grid-template-columns: 1fr;
+  gap: 16px;
   /* thirds section */
+}
+footer img {
+  width: 24px;
+  height: auto;
+}
+footer form {
+  padding: 16px;
+}
+footer form input {
+  background-color: transparent;
+  border-color: transparent;
+  width: 100%;
+}
+footer form input::placeholder {
+  background-color: #bd8ebe;
+  font-size: 16pt;
+  height: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  color: #724781;
+}
+footer form button {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #d6ae7f;
+  color: #946644;
+  align-content: center;
+  border-radius: 6px;
+  border-color: transparent;
+}
+footer h5, footer h6 {
+  color: #eab5c8;
+}
+footer p {
+  color: #d992b8;
 }
 footer .fsection {
   display: grid;
   grid-template-columns: 1fr;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom-color: #715785;
   /* address logos/copy */
 }
-footer .fsection #address {
+footer .fsection .address {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
+@media (min-width: 768px) {
+  .content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 992px) {
+  .content {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+  }
+}
 /* =============
     Scripts
 ============= */
@@ -438,27 +498,51 @@ footer .fsection #address {
 .search {
   background-color: #dfc9e4;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   padding: 16px;
-  gap: 16px;
-  /* magnifying glass button */
+  gap: 12px;
 }
-.search p {
-  text-decoration: underline;
+.search form {
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+  gap: 12px;
+}
+.search form input {
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom-color: #bd8ebe;
+  border-bottom-style: solid;
+  width: 100%;
+}
+.search form input::placeholder {
   font-size: 16pt;
   color: #bd8ebe;
 }
-.search #sbutton {
+.search form button {
   display: grid;
   grid-template-columns: 1fr;
   background-color: #5b3a28;
   align-content: center;
   border-radius: 3.5px;
+  border-color: transparent;
   height: 34px;
   width: 42px;
   padding: 10px;
 }
+.search hr {
+  border-color: #bd8ebe;
+  border-style: solid;
+  width: 100%;
+}
 
+@media (min-width: 768px) {
+  button {
+    height: 49px;
+    width: 61px;
+    padding: 10px;
+  }
+}
 /* =============
     Hero content
 ============= */
@@ -467,24 +551,36 @@ footer .fsection #address {
   grid-template-columns: 1fr;
   color: #d6ae7f;
   /* hero-stripe subtitle & arrow */
-  /* hero stripe 1 (top) */
   /* hero stripe 2 (bottom) */
 }
-.hero #hs-subtitle {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.hero .herostripe1 {
-  background-color: #5b3a28;
+.hero .stripes {
   display: grid;
   grid-template-columns: 1fr;
+  /* hero stripe 1 (top) */
+}
+.hero .stripes div {
+  padding-inline: 16px;
+  align-content: center;
+}
+.hero .stripes img {
+  width: 10%;
+}
+.hero .stripes .herostripe1 {
+  background-color: #5b3a28;
+  display: grid;
+  grid-template-columns: 80% 1fr;
 }
 .hero .herostripe2 {
   background-color: #946644;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 80% 1fr;
 }
 
+@media (min-width: 768px) {
+  .stripes {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 /* =============
     Dual "main" buttons
 ============= */
@@ -507,21 +603,30 @@ footer .fsection #address {
   /* right side of button */
 }
 .mainbuttons .button .mb-rightside {
+  height: cover;
+  width: inherit;
   background-image: url("deploy/img/logo-pic.png");
   background-size: cover;
   display: grid;
   grid-template-columns: 1fr;
   border-radius: 6px;
   padding: 16px;
+  align-content: center;
 }
 .mainbuttons .button .mb-rightside .readmore {
+  width: 60%;
+  height: fit-content;
   background-color: #5b3a28;
   color: #d6ae7f;
   border-radius: 6px;
-  padding: 8px;
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .mainbuttons {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 /* =============
     Image gallery
 ============= */
@@ -535,6 +640,11 @@ footer .fsection #address {
   background-size: cover;
 }
 
+@media (min-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 /* =============
     "what's new" articles
 ============= */
@@ -543,7 +653,7 @@ footer .fsection #address {
   grid-template-columns: 1fr;
   color: #513959;
   gap: 16px;
-  padding: 16px;
+  padding-bottom: 24px;
 }
 
 /* individual article class */
@@ -558,6 +668,8 @@ footer .fsection #address {
 }
 .article h4 {
   padding: 16px;
+  font-size: 27pt;
+  font-weight: 600;
   color: #301c36;
 }
 .article p {
@@ -565,12 +677,25 @@ footer .fsection #address {
   color: #724781;
 }
 .article .readmore {
-  padding: 16px;
+  width: fit-content;
+  height: fit-content;
+  margin: 16px;
   background-color: #5b3a28;
   border-radius: 6px;
-  padding: 8px;
   text-align: center;
 }
 .article .readmore p {
   color: #d6ae7f;
+  padding-block: 0px;
+}
+
+@media (min-width: 768px) {
+  .content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 992px) {
+  .content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

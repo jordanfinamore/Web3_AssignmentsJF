@@ -18,19 +18,29 @@ gap: 16px;
     padding-right: 0px;
     /* right side of button */
 .mb-rightside{
+    height: cover;
+    width: inherit;
     background-image: url("deploy/img/logo-pic.png");
     background-size: cover;
     display:grid;
     grid-template-columns: 1fr;
     border-radius: 6px;
     padding: 16px;
+    align-content: center;
     .readmore {
+
+        width: 60%;
+        height: fit-content;
         background-color: $d-frenchroast;
         color: $l-frenchroast;
         border-radius: 6px;
-        padding: 8px;
         text-align: center;
       }
     }
+    }
+}
+@include md{
+    .mainbuttons{
+    grid-template-columns: 1fr 1fr;
     }
 }

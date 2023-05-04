@@ -6,20 +6,32 @@
 grid-template-columns: 1fr;
 color: $l-frenchroast;
 /* hero-stripe subtitle & arrow */
-#hs-subtitle{
+.stripes{
     display:grid;
-grid-template-columns: 1fr 1fr;
+grid-template-columns: 1fr;
+div{
+    padding-inline: 16px;
+align-content: center;
+}
+img{
+    width: 10%;
 }
 /* hero stripe 1 (top) */
 .herostripe1{
     background-color: $d-frenchroast;
     display:grid;
-grid-template-columns: 1fr;
+grid-template-columns: 80% 1fr;
+}
 }
 /* hero stripe 2 (bottom) */
 .herostripe2{
     background-color: $frenchroast;
     display:grid;
-grid-template-columns: 1fr;
+grid-template-columns: 80% 1fr;
 }
+}
+@include md{
+    .stripes{
+    grid-template-columns: 1fr 1fr;
+    }
 }

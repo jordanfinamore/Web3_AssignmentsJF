@@ -4,23 +4,47 @@
 .search{
 background-color: $l-wisteria;
 display: grid;
-grid-template-columns: 1fr 1fr;
+grid-template-columns: 1fr;
 padding: 16px;
-gap: 16px;
-p{
-text-decoration: underline;
-font-size: 16pt;
+gap: 12px;
+form {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+gap: 12px;
+input{
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom-color: $wisteria;
+    border-bottom-style: solid;
+    width: 100%;
+}
+input::placeholder {
+    font-size: 16pt;
     color: $wisteria;
-  }
-  /* magnifying glass button */
-#sbutton{
+}
+button{
     display:grid;
     grid-template-columns: 1fr;
     background-color: $d-frenchroast;
     align-content:center;
     border-radius: 3.5px;
+    border-color: transparent;
     height: 34px;
     width: 42px;
     padding: 10px;
     }
+}
+hr{
+    border-color: $wisteria;
+    border-style: solid;
+    width: 100%;
+}
+}
+@include md{
+    button{
+        height: 49px;
+        width: 61px;
+        padding: 10px;
+        }
 }

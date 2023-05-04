@@ -5,14 +5,66 @@ footer{
     background-color: $l-amaranth;
 display:grid;
 grid-template-columns: 1fr;
+gap: 16px;
+img {
+    width: 24px;
+    height: auto;
+}
+form {
+    padding: 16px;
+input{
+    background-color: transparent;
+    border-color: transparent;
+    width: 100%;
+}
+input::placeholder {
+    background-color: $wisteria;
+    font-size: 16pt;
+    height: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    color: $d-wisteria;
+}
+button{
+    display:grid;
+    grid-template-columns: 1fr;
+    background-color: $l-frenchroast;
+    color: $frenchroast;
+    align-content:center;
+    border-radius: 6px;
+    border-color: transparent;
+    }
+}
+h5, h6 {
+    color: $l-alpinefrost;
+}
+p {
+    color: $alpinefrost;
+}
 /* thirds section */
 .fsection{
     display:grid;
     grid-template-columns: 1fr;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom-color: $l-amaranth;
     /* address logos/copy */
- #address{
+ .address{
     display:grid;
     grid-template-columns: 1fr 1fr;
      }
     }
+}
+
+@include md{
+    .content{
+        grid-template-columns:  1fr 1fr;
+        }
+}
+
+@include lg{
+    .content{
+        grid-template-columns:  1fr  1fr 1fr;
+        align-content: center;
+        } 
 }
