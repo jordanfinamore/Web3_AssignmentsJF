@@ -4,37 +4,36 @@
 .mainbuttons{
     display:grid;
 grid-template-columns: 1fr;
-padding: 16px;
+padding-block: 24px;
 gap: 16px;
 /* individual button */
 .button{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
+    display:flex;
+    justify-content: space-between;
     background-color: $l-alpinefrost;
     color: $d-wisteria;
     border-radius: 6px;
-    padding-block: 16px;
     padding-left: 16px;
-    padding-right: 0px;
+    h3{
+        width: 60%;
+        }
     /* right side of button */
 .mb-rightside{
     height: cover;
-    width: inherit;
-    background-image: url("deploy/img/logo-pic.png");
+    background-image: url("../img/logo-pic.png");
     background-size: cover;
-    display:grid;
-    grid-template-columns: 1fr;
     border-radius: 6px;
     padding: 16px;
-    align-content: center;
-    .readmore {
-
-        width: 60%;
-        height: fit-content;
+    display:flex;
+    align-items: flex-end;
+    a.readmore {
         background-color: $d-frenchroast;
         color: $l-frenchroast;
         border-radius: 6px;
-        text-align: center;
+        line-height: 16px;
+        text-decoration: none;
+        padding: 8px;
+        padding-inline: 16px;
       }
     }
     }
@@ -42,5 +41,17 @@ gap: 16px;
 @include md{
     .mainbuttons{
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin-inline: 16px;
+    gap: 16px;
+    .button{
+        width: 90%;
+        max-width: 487px;
+    }
+    }
+}
+@include xl{
+    .mainbuttons{
+    margin-inline: 225px;
     }
 }

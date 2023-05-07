@@ -331,7 +331,7 @@ svg {
 body {
   margin: 0;
   background-color: #fffef9;
-  align-content: center;
+  justify-content: center;
   font-family: "American Typewriter", sans-serif;
   display: grid;
   grid-template-columns: 1fr;
@@ -540,7 +540,7 @@ footer .fsection .address {
   button {
     height: 49px;
     width: 61px;
-    padding: 10px;
+    padding: 8px;
   }
 }
 /* =============
@@ -551,7 +551,6 @@ footer .fsection .address {
   grid-template-columns: 1fr;
   color: #d6ae7f;
   /* hero-stripe subtitle & arrow */
-  /* hero stripe 2 (bottom) */
 }
 .hero .stripes {
   display: grid;
@@ -562,69 +561,121 @@ footer .fsection .address {
   padding-inline: 16px;
   align-content: center;
 }
-.hero .stripes img {
-  width: 10%;
+.hero .stripes #sright h2 {
+  visibility: hidden;
+}
+.hero .stripes #sright img {
+  width: 15%;
 }
 .hero .stripes .herostripe1 {
-  background-color: #5b3a28;
-  display: grid;
-  grid-template-columns: 80% 1fr;
-}
-.hero .herostripe2 {
   background-color: #946644;
   display: grid;
   grid-template-columns: 80% 1fr;
 }
-
+.hero .stripes .herostripe2 {
+  background-color: #5b3a28;
+  display: grid;
+  grid-template-columns: 80% 1fr;
+}
 @media (min-width: 768px) {
-  .stripes {
-    grid-template-columns: 1fr 1fr;
+  .hero .stripes {
+    display: grid;
+    grid-template-columns: 48% 1fr;
+  }
+  .hero .stripes #sright h2 {
+    visibility: hidden;
+  }
+  .hero .stripes #sright img {
+    width: 25%;
   }
 }
+@media (min-width: 992px) {
+  .hero .stripes {
+    display: grid;
+    grid-template-columns: 48% 1fr;
+  }
+  .hero .stripes #sright {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .hero .stripes #sright h2 {
+    visibility: visible;
+    font-weight: 700;
+  }
+  .hero .stripes #sright img {
+    width: 15%;
+  }
+}
+@media (min-width: 1200px) {
+  .hero .stripes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero .stripes .herostripe1 {
+    text-align: right;
+  }
+  .hero .stripes .herostripe2 {
+    text-align: left;
+  }
+}
+
 /* =============
     Dual "main" buttons
 ============= */
 .mainbuttons {
   display: grid;
   grid-template-columns: 1fr;
-  padding: 16px;
+  padding-block: 24px;
   gap: 16px;
   /* individual button */
 }
 .mainbuttons .button {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
   background-color: #eab5c8;
   color: #724781;
   border-radius: 6px;
-  padding-block: 16px;
   padding-left: 16px;
-  padding-right: 0px;
   /* right side of button */
+}
+.mainbuttons .button h3 {
+  width: 60%;
 }
 .mainbuttons .button .mb-rightside {
   height: cover;
-  width: inherit;
-  background-image: url("deploy/img/logo-pic.png");
+  background-image: url("../img/logo-pic.png");
   background-size: cover;
-  display: grid;
-  grid-template-columns: 1fr;
   border-radius: 6px;
   padding: 16px;
-  align-content: center;
+  display: flex;
+  align-items: flex-end;
 }
-.mainbuttons .button .mb-rightside .readmore {
-  width: 60%;
-  height: fit-content;
+.mainbuttons .button .mb-rightside a.readmore {
   background-color: #5b3a28;
   color: #d6ae7f;
   border-radius: 6px;
-  text-align: center;
+  line-height: 16px;
+  text-decoration: none;
+  padding: 8px;
+  padding-inline: 16px;
 }
 
 @media (min-width: 768px) {
   .mainbuttons {
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin-inline: 16px;
+    gap: 16px;
+  }
+  .mainbuttons .button {
+    width: 90%;
+    max-width: 487px;
+  }
+}
+@media (min-width: 1200px) {
+  .mainbuttons {
+    margin-inline: 225px;
   }
 }
 /* =============
@@ -634,15 +685,37 @@ footer .fsection .address {
   display: grid;
   grid-template-columns: 1fr;
 }
+.gallery #img3 {
+  visibility: hidden;
+}
 
 /* format of gallery image */
-.galimage {
+img {
   background-size: cover;
 }
 
 @media (min-width: 768px) {
   .gallery {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
+    height: 594px;
+    clip-path: view-box;
+    aspect-ratio: initial;
+  }
+  .gallery img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .gallery {
+    grid-template-columns: auto auto;
+    height: 625px;
+    padding: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  #img3 {
+    visibility: visible;
   }
 }
 /* =============

@@ -4,13 +4,37 @@
 .gallery{
 display:grid;
 grid-template-columns: 1fr;
+#img3{
+    visibility: hidden;
+}
 }
 /* format of gallery image */
-.galimage{
+img{
     background-size: cover;
     }
     @include md{
         .gallery{
-            grid-template-columns:  1fr 1fr;
+            grid-template-columns: auto auto;
+            height: 594px;
+            clip-path: view-box;
+            aspect-ratio: initial;
+            img{
+                width: 100%;
+                height: 100%;
+            }
             }
         }
+
+        @include lg{
+            .gallery{
+                grid-template-columns: auto auto;
+                height: 625px;
+                padding: 16px;
+                }
+            }
+
+            @include xl{
+                #img3{
+                    visibility: visible;
+                }
+                }

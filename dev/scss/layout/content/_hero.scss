@@ -2,6 +2,7 @@
     Hero content
 ============= */
 .hero{
+
     display:grid;
 grid-template-columns: 1fr;
 color: $l-frenchroast;
@@ -13,25 +14,69 @@ div{
     padding-inline: 16px;
 align-content: center;
 }
-img{
-    width: 10%;
-}
+#sright{
+    h2{
+        visibility: hidden;
+    }
+    img{
+        width: 15%;
+    }
+    }
 /* hero stripe 1 (top) */
 .herostripe1{
-    background-color: $d-frenchroast;
+    background-color: $frenchroast;
     display:grid;
 grid-template-columns: 80% 1fr;
+
 }
-}
-/* hero stripe 2 (bottom) */
 .herostripe2{
-    background-color: $frenchroast;
+    background-color: $d-frenchroast;
     display:grid;
 grid-template-columns: 80% 1fr;
 }
 }
 @include md{
     .stripes{
-    grid-template-columns: 1fr 1fr;
+        display: grid;
+    grid-template-columns: 48% 1fr;
+    #sright{
+        h2{
+            visibility: hidden;
+        }
+        img{
+            width: 25%;
+        }
+        }
     }
+}
+@include lg{
+    .stripes{
+        display: grid;
+    grid-template-columns: 48% 1fr;
+    #sright{
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        h2{
+            visibility: visible;
+            font-weight: 700;
+        }
+        img{
+            width: 15%;
+        }
+        }
+    }
+}
+@include xl{
+    .stripes{
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    .herostripe1{
+        text-align: right;
+    }
+    .herostripe2{
+text-align: left;
+    }
+        }
+}
 }
