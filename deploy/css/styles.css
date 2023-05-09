@@ -413,7 +413,7 @@ header {
   background-color: #513959;
   display: grid;
   grid-template-columns: 20%;
-  padding: 32px;
+  padding: 16px;
 }
 header img {
   height: inherit;
@@ -684,6 +684,7 @@ footer .fsection .address {
 .gallery {
   display: grid;
   grid-template-columns: 1fr;
+  height: auto;
 }
 .gallery #img3 {
   visibility: hidden;

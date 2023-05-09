@@ -4,6 +4,7 @@
 .gallery{
 display:grid;
 grid-template-columns: 1fr;
+height: auto;
 #img3{
     visibility: hidden;
 }
