@@ -2,40 +2,61 @@
     Image gallery
 ============= */
 .gallery{
-display:grid;
-grid-template-columns: 1fr;
-height: auto;
-#img3{
-    visibility: hidden;
-}
-}
-/* format of gallery image */
-img{
-    background-size: cover;
+    img{
+        visibility: hidden;
     }
-    @include md{
-        .gallery{
-            grid-template-columns: auto auto;
-            height: 594px;
-            clip-path: view-box;
-            aspect-ratio: initial;
-            img{
-                width: 100%;
-                height: 100%;
-            }
-            }
-        }
-
-        @include lg{
-            .gallery{
-                grid-template-columns: auto auto;
-                height: 625px;
-                padding: 16px;
-                }
-            }
-
-            @include xl{
-                #img3{
-                    visibility: visible;
-                }
-                }
+    .pic1{
+        grid-area: pic1;
+        background-image: url("../img/pic1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    .pic2{
+        grid-area: pic2;
+        background-image: url("../img/pic4.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    .pic3{
+        grid-area: pic3;
+        background-image: url("../img/pic5.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    .pic2{
+        visibility: hidden;  
+        width: 0px;
+    }
+ul{
+list-style: none;
+padding: 0;
+margin: 0;
+display: grid;
+grid-template-columns: 1fr;
+grid-template-areas: 
+"pic1" 
+"pic3";
+@include md{
+grid-template-columns:  1fr 1fr;
+grid-template-areas: 
+"pic1 pic3";
+}
+@include lg{
+margin: 1%;
+}
+@include xl{
+    .pic2{
+        visibility: visible;  
+        width: auto;
+    }
+    margin: 3%;
+    grid-template-columns:  1fr 1fr;
+grid-template-areas: 
+"pic1 pic2"
+"pic1 pic3";
+    }
+}
+}

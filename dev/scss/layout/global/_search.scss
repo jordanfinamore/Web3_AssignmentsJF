@@ -7,6 +7,11 @@ display: grid;
 grid-template-columns: 1fr;
 padding: 16px;
 gap: 12px;
+.search {
+    color: $wisteria;
+    border-color: transparent;
+    font-size: inherit;
+}
 form {
     display: flex;
     flex-direction: row;
@@ -23,6 +28,7 @@ input::placeholder {
     font-size: 16pt;
     color: $wisteria;
 }
+
 button{
     display:grid;
     grid-template-columns: 1fr;

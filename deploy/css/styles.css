@@ -502,6 +502,11 @@ footer .fsection .address {
   padding: 16px;
   gap: 12px;
 }
+.search .search {
+  color: #bd8ebe;
+  border-color: transparent;
+  font-size: inherit;
+}
 .search form {
   display: flex;
   flex-direction: row;
@@ -675,50 +680,71 @@ footer .fsection .address {
 }
 @media (min-width: 1200px) {
   .mainbuttons {
-    margin-inline: 225px;
+    margin-inline: 10%;
   }
 }
 /* =============
     Image gallery
 ============= */
-.gallery {
-  display: grid;
-  grid-template-columns: 1fr;
-  height: auto;
-}
-.gallery #img3 {
+.gallery img {
   visibility: hidden;
 }
-
-/* format of gallery image */
-img {
+.gallery .pic1 {
+  grid-area: pic1;
+  background-image: url("../img/pic1.png");
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
 }
-
+.gallery .pic2 {
+  grid-area: pic2;
+  background-image: url("../img/pic4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.gallery .pic3 {
+  grid-area: pic3;
+  background-image: url("../img/pic5.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.gallery .pic2 {
+  visibility: hidden;
+  width: 0px;
+}
+.gallery ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "pic1" "pic3";
+}
 @media (min-width: 768px) {
-  .gallery {
-    grid-template-columns: auto auto;
-    height: 594px;
-    clip-path: view-box;
-    aspect-ratio: initial;
-  }
-  .gallery img {
-    width: 100%;
-    height: 100%;
+  .gallery ul {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "pic1 pic3";
   }
 }
 @media (min-width: 992px) {
-  .gallery {
-    grid-template-columns: auto auto;
-    height: 625px;
-    padding: 16px;
+  .gallery ul {
+    margin: 1%;
   }
 }
 @media (min-width: 1200px) {
-  #img3 {
+  .gallery ul {
+    margin: 3%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "pic1 pic2" "pic1 pic3";
+  }
+  .gallery ul .pic2 {
     visibility: visible;
+    width: auto;
   }
 }
+
 /* =============
     "what's new" articles
 ============= */
