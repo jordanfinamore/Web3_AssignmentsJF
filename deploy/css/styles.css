@@ -686,11 +686,9 @@ footer .fsection .address {
 /* =============
     Image gallery
 ============= */
-.gallery img {
-  visibility: hidden;
-}
 .gallery .pic1 {
   grid-area: pic1;
+  height: 400px;
   background-image: url("../img/pic1.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -702,17 +700,16 @@ footer .fsection .address {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  visibility: hidden;
+  height: 0px;
 }
 .gallery .pic3 {
   grid-area: pic3;
+  height: 400px;
   background-image: url("../img/pic5.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-}
-.gallery .pic2 {
-  visibility: hidden;
-  width: 0px;
 }
 .gallery ul {
   list-style: none;
@@ -739,9 +736,12 @@ footer .fsection .address {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "pic1 pic2" "pic1 pic3";
   }
+  .gallery ul .pic1 {
+    height: 800px;
+  }
   .gallery ul .pic2 {
     visibility: visible;
-    width: auto;
+    height: 400px;
   }
 }
 

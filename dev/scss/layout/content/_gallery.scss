@@ -2,11 +2,9 @@
     Image gallery
 ============= */
 .gallery{
-    img{
-        visibility: hidden;
-    }
     .pic1{
         grid-area: pic1;
+        height: 400px;
         background-image: url("../img/pic1.png");
         background-repeat: no-repeat;
         background-size: cover;
@@ -18,17 +16,16 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
+        visibility: hidden;
+        height: 0px;
     }
     .pic3{
         grid-area: pic3;
+        height: 400px;
         background-image: url("../img/pic5.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
-    }
-    .pic2{
-        visibility: hidden;  
-        width: 0px;
     }
 ul{
 list-style: none;
@@ -48,9 +45,12 @@ grid-template-areas:
 margin: 1%;
 }
 @include xl{
+    .pic1{
+        height: 800px;
+    }
     .pic2{
         visibility: visible;  
-        width: auto;
+        height: 400px;
     }
     margin: 3%;
     grid-template-columns:  1fr 1fr;
