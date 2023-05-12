@@ -2,51 +2,88 @@
     "what's new" articles
 ============= */
 .articles{
-display:grid;
-grid-template-columns: 1fr;
+display: flex;
+flex-direction: column;
 color: $amaranth;
-gap: 16px;
 padding-bottom: 24px;
-}
-/* individual article class */
+.content{
+display: flex;
+flex-direction: column;
+gap: 24px;
+ /* individual article class */
 .article{
     border-radius: 6px;
     background-color: $l-wisteria;
-    display:grid;
-    grid-template-columns: 1fr;
-    img{
+    .covimg{
         border-radius: 6px 6px 0px 0px;
+        height: 300px;
+        margin-bottom: 8px;
     }
+    #pic2{
+        background-image: url("../img/pic2.png");
+        background-size: cover;
+        background-position-y: center;
+         }
+     #pic3{
+        background-image: url("../img/pic3.png");
+        background-size: cover;
+        background-position-y: center;
+         }
+     #pic6{
+         background-image: url("../img/pic6.png");
+         background-size: cover;
+        background-position-y: center;
+         }
+     #pic7{
+        background-image: url("../img/pic7.png");
+        background-size: cover;
+        background-position-y: center;
+         }
+     #pic8{
+         background-image: url("../img/pic8.png");
+         background-size: cover;
+        background-position-y: center;
+         }
     h4{
-        padding: 16px;
+        padding-inline: 16px;
         font-size: 27pt;
         font-weight: 600;
         color: $d-amaranth;
     }
     p{
-        padding: 16px;
+        padding: 0px 16px;
         color: $d-wisteria;
     }
     .readmore {
-        width: fit-content;
-        height: fit-content;
         margin: 16px;
+        display: inline-block;
+        border-radius: 6px;
         background-color: $d-frenchroast;
         p{
             color: $l-frenchroast;
-            padding-block: 0px;
+            margin: 0px;
+            padding: 8px;
         }
-        border-radius: 6px;
-        text-align: center;
       }
     }
-    @include md{
-        .content{
-            grid-template-columns:  1fr 1fr;
+}
+@include md{
+    .content{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        .article{
+            width: 360px;
+            .covimg{
+                height: 184px;
             }
-    }
-    @include lg{
-        .content{
-            grid-template-columns:  1fr  1fr 1fr;
-            } 
-    }
+        }
+        }
+}
+@include lg{
+    .content{
+        grid-template-columns:  1fr  1fr 1fr;
+        justify-content: center;
+        } 
+}
+}

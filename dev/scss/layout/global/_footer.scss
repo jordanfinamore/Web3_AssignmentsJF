@@ -2,69 +2,123 @@
     Footer
 ============= */
 footer{
-    background-color: $l-amaranth;
+background-color: $amaranth;
 display:grid;
 grid-template-columns: 1fr;
-gap: 16px;
+padding: 16px;
 img {
     width: 24px;
-    height: auto;
+    height: inherit;
 }
-form {
-    padding: 16px;
-input{
-    background-color: transparent;
-    border-color: transparent;
-    width: 100%;
-}
-input::placeholder {
-    background-color: $wisteria;
-    font-size: 16pt;
-    height: 100%;
-    padding: 10px;
-    border-radius: 6px;
-    color: $d-wisteria;
-}
-button{
-    display:grid;
-    grid-template-columns: 1fr;
-    background-color: $l-frenchroast;
-    color: $frenchroast;
-    align-content:center;
-    border-radius: 6px;
-    border-color: transparent;
-    }
+h5 {
+    letter-spacing: 1px;
+    margin: 8px;
 }
 h5, h6 {
     color: $l-alpinefrost;
+    margin: 8px 0px;
 }
 p {
     color: $alpinefrost;
+    margin: 8px;
 }
-/* thirds section */
+
 .fsection{
-    display:grid;
-    grid-template-columns: 1fr;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
     border-style: solid;
     border-color: transparent;
     border-bottom-color: $l-amaranth;
+    padding: 16px 0px;
+    gap: 8px;
     /* address logos/copy */
  .address{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+   flex-direction: flex-start;
+   align-content: center;
+   gap: 8px;
      }
+      /* form info */
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* entire email field */
+input{
+    background-color: $wisteria;
+    border-color: transparent;
+    font-size: 16pt;
+    border-radius: 6px;
+    width: inherit;
+    padding: 16px 16px;
+}
+input::placeholder {
+    color: $d-wisteria;
+}
+/* active text */
+input:focus{
+    color: $d-wisteria;
+}
+/* signup button */
+button{
+    margin-top: 16px;
+    display: flex;
+    margin-left: auto;
+    background-color: $l-frenchroast;
+    color: $frenchroast;
+    border-radius: 6px;
+    border-color: transparent;
+    padding: 8px 16px;
     }
+}
+     /* socials */
+    .social {
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+        gap: 16px;
+        img{
+            height: 24px;
+            width: auto;
+        }
+    }
+    }
+ 
 }
 
 @include md{
-    .content{
+    footer{
         grid-template-columns:  1fr 1fr;
+        grid-template-areas: 
+        "loc sig"
+        "soc sig";
+        align-content: center;
+        .fsection{
+            border-color: transparent;
+            padding-top: 0px;
+            form {
+                border-style: solid;
+    border-color: transparent;
+    border-bottom-color: $l-amaranth;
+   padding-bottom: 30px;
+            }
+        }
         }
 }
 
 @include lg{
-    .content{
-        grid-template-columns:  1fr  1fr 1fr;
-        align-content: center;
+    footer{
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        border-style: solid;
+    border-color: transparent;
+    border-bottom-color: $l-amaranth;
+    padding-bottom: 1px;
+        .fsection {
+form {
+    border-color: transparent; 
+}
+        }
         } 
 }
