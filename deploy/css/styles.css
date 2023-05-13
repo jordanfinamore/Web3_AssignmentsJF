@@ -419,6 +419,11 @@ header img {
   height: inherit;
   width: cover;
 }
+@media (min-width: 992px) {
+  header {
+    padding: 24px 16px;
+  }
+}
 
 /* =============
     Footer
@@ -444,6 +449,9 @@ footer h5, footer h6 {
 footer p {
   color: #d992b8;
   margin: 8px;
+}
+footer #soc {
+  border-bottom-color: transparent;
 }
 footer .fsection {
   display: flex;
@@ -526,15 +534,30 @@ footer .fsection .social img {
 @media (min-width: 992px) {
   footer {
     display: flex;
-    gap: 16px;
-    justify-content: center;
+    justify-content: space-between;
     border-style: solid;
     border-color: transparent;
     border-bottom-color: #715785;
-    padding-bottom: 1px;
+  }
+  footer #loc {
+    text-align: left;
+  }
+  footer #sig {
+    text-align: center;
+  }
+  footer #soc {
+    text-align: right;
+  }
+  footer .fsection {
+    justify-content: start;
   }
   footer .fsection form {
     border-color: transparent;
+  }
+}
+@media (min-width: 1200px) {
+  footer {
+    padding: 0px 10%;
   }
 }
 /* =============
@@ -622,13 +645,13 @@ footer .fsection .social img {
 }
 .hero .stripes .herostripe1 {
   background-color: #946644;
-  display: grid;
-  grid-template-columns: 80% 1fr;
+  display: flex;
+  justify-content: center;
 }
 .hero .stripes .herostripe2 {
   background-color: #5b3a28;
-  display: grid;
-  grid-template-columns: 80% 1fr;
+  display: flex;
+  justify-content: center;
 }
 @media (min-width: 768px) {
   .hero .stripes {
@@ -666,7 +689,7 @@ footer .fsection .social img {
     grid-template-columns: 1fr 1fr;
   }
   .hero .stripes .herostripe1 {
-    text-align: right;
+    text-align: left;
   }
   .hero .stripes .herostripe2 {
     text-align: left;
@@ -796,6 +819,15 @@ footer .fsection .social img {
 /* =============
     "what's new" articles
 ============= */
+h3 {
+  margin-left: 16px;
+  font-weight: 400;
+}
+
+h4 {
+  width: 60%;
+}
+
 .articles {
   display: flex;
   flex-direction: column;
@@ -880,5 +912,11 @@ footer .fsection .social img {
   .articles .content {
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .articles {
+    margin: 64px;
   }
 }

@@ -25,14 +25,13 @@ align-content: center;
 /* hero stripe 1 (top) */
 .herostripe1{
     background-color: $frenchroast;
-    display:grid;
-grid-template-columns: 80% 1fr;
-
+    display:flex;
+    justify-content: center;
 }
 .herostripe2{
     background-color: $d-frenchroast;
-    display:grid;
-grid-template-columns: 80% 1fr;
+    display:flex;
+    justify-content: center;
 }
 }
 @include md{
@@ -72,7 +71,7 @@ grid-template-columns: 80% 1fr;
         display: grid;
     grid-template-columns: 1fr 1fr;
     .herostripe1{
-        text-align: right;
+        text-align: left;
     }
     .herostripe2{
 text-align: left;

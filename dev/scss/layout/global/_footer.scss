@@ -22,7 +22,9 @@ p {
     color: $alpinefrost;
     margin: 8px;
 }
-
+#soc{
+    border-bottom-color: transparent;
+ }
 .fsection{
     display:flex;
     justify-content: center;
@@ -109,16 +111,30 @@ button{
 @include lg{
     footer{
         display: flex;
-        gap: 16px;
-        justify-content: center;
+        justify-content: space-between;
         border-style: solid;
     border-color: transparent;
     border-bottom-color: $l-amaranth;
-    padding-bottom: 1px;
+    #loc{
+        text-align: left;
+     }
+    #sig{
+        text-align: center;
+     }
+     #soc{
+        text-align: right;
+     }
         .fsection {
+        justify-content: start;
 form {
     border-color: transparent; 
 }
         }
         } 
+}
+@include xl{
+    footer{
+        padding: 0px 10%;
+
+    }
 }

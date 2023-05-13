@@ -10,4 +10,7 @@ img{
     height: inherit;
     width: cover;
 }
+@include lg{
+    padding: 24px 16px;
+}
 }

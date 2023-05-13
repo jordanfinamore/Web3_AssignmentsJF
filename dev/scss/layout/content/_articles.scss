@@ -1,6 +1,13 @@
 /* =============
     "what's new" articles
 ============= */
+h3{
+    margin-left: 16px;
+    font-weight: 400;
+}
+h4{
+    width: 60%;
+}
 .articles{
 display: flex;
 flex-direction: column;
@@ -82,8 +89,13 @@ gap: 24px;
 }
 @include lg{
     .content{
-        grid-template-columns:  1fr  1fr 1fr;
+        grid-template-columns:  1fr 1fr 1fr;
         justify-content: center;
         } 
 }
 }
+@include xl{
+    .articles {
+        margin: 64px;
+    }
+    }
